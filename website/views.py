@@ -11,3 +11,7 @@ def welcome(request):
 
 def date(request):
     return HttpResponse('This request is made at ' + str(datetime.now()))
+
+
+def about(request):
+    return HttpResponse('<h1>About</h1> Pyl is Pyl!')
