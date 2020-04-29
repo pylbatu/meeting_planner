@@ -21,7 +21,7 @@ def rooms(request):
         }
     )
 
-def roomDetail(request, id):
+def room(request, id):
     room = get_object_or_404(Room, pk=id)
     return render(request, 'rooms/detail.html', {
         'room': room
