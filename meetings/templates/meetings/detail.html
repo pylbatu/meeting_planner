@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>
+{% extends 'base.html' %}
+
+    {% block title %}
             Meeting Details
-        </title>
-    </head>
-    <body>
+    {% endblock %}
+    {% block content %}
         <h1>
             {{ meeting.title }}
         </h1>
@@ -19,5 +16,4 @@
                 Go back to home
             </a>
         </p>
-    </body>
-</html>
+    {% endblock %}

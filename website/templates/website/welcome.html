@@ -1,15 +1,11 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block title %}
+    Base is working
+{% endblock %}
 
-<head>
-    <meta charset="UTF-*">
-    <title>Welcome!</title>
-    <link rel="stylesheet" href="{% static 'website/styles.css' %}"/>
-</head>
 
-<body>
+{% block content %}
     <h1>Welcome Pyl!</h1>
     <p>
         {{ welcome_message }}
@@ -37,6 +33,4 @@
             View your rooms
         </a>
     </h2>
-</body>
-
-</html>
+{% endblock %}
