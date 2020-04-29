@@ -13,5 +13,11 @@
         <p>
             Meeting is on {{ meeting.date }} {{meeting.time }} for {{meeting.duration_in_hours}} hours.
         </p>
+
+        <p>
+            <a href="{% url 'home' %}">
+                Go back to home
+            </a>
+        </p>
     </body>
 </html>
