@@ -22,7 +22,9 @@
     <ul>
         {% for meeting in meetings%}
         <li>
-            {{ meeting }}
+            <a href="{% url 'detail' meeting.id %}">
+                {{ meeting }}
+            </a>
         </li>
         {% endfor %}
     </ul>

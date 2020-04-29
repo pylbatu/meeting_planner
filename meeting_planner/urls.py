@@ -23,5 +23,5 @@ urlpatterns = [
     path('', welcome),
     path('date', date),
     path('about', about),
-    path('detail/<int:id>', detail)
+    path('meeting/<int:id>', detail, name='detail')
 ]
