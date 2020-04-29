@@ -6,7 +6,10 @@ from django.http import HttpResponse
 
 
 def welcome(request):
-    return render(request, 'website/welcome.html')
+    return render(request, 'website/welcome.html', {
+        'welcome_message': 'You are super!',
+        'secret_message' : 'You are loved!'
+    })
 
 
 def date(request):
