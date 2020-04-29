@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 
 def welcome(request):
-    return HttpResponse('Welcome to your website Pyl!')
+    return render(request, 'website/welcome.html')
 
 
 def date(request):
