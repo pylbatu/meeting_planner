@@ -1,12 +1,12 @@
 from .models import Meeting
 
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 
 
 def detail(request, id):
-    meeting = Meeting.objects.get
+    meeting = get_object_or_404(Meeting, pk=id)
     return render(request, 'meetings/detail.html', {
         'meeting': meeting
     })
