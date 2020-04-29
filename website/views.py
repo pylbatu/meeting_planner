@@ -10,7 +10,7 @@ def welcome(request):
     return render(request, 'website/welcome.html', {
         'welcome_message': 'You are super!',
         'secret_message' : 'You are loved!',
-        'meetings_count': Meeting.objects.count()
+        'meetings': Meeting.objects.all()
     })
 
 

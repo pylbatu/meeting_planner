@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-*">
     <title>Welcome!</title>
 </head>
+
 <body>
     <h1>Welcome Pyl!</h1>
     <p>
@@ -15,5 +17,15 @@
     <p>
         You have {{ meetings_count }} meetings.
     </p>
+
+    <h2>Meetings</h2>
+    <ul>
+        {% for meeting in meetings%}
+        <li>
+            {{ meeting }}
+        </li>
+        {% endfor %}
+    </ul>
 </body>
+
 </html>
